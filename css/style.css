@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'iran_sans_bold';
+    src: url('../Fonts/iran_sans_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_light';
+    src: url('../Fonts/iran_sans_light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_medi';
+    src: url('../Fonts/iran_sans_medi.woff') format('woff');
+}
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #eb0086;
+}
+.logo{
+    height: 70px;
+    width: auto;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.navbar{
+    height: 70px;
+    width: auto;
+    position: absolute;
+   top: 3%;
+   right: 5%;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li{
+    margin: 0 30px;
+    font-size: 20px;
+    line-height: 70px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    color: #f9d854;
+}
+.circle{
+    height: 750px;
+    width: 750px;
+    border-radius: 50%;
+    position: absolute;
+    right: -100px;
+    bottom: -250px;
+    display: grid;
+    place-items: center;
+    border:8px solid #daac81;
+}
+.circle .innerCircle{
+    height: 650px;
+    width: 650px;
+    background-color: #daac81;
+    border-radius: 50%;
+    position: relative;
+}
+.circle .innerCircle img{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    bottom: 170px;
+    right: 180px;
+}
+.content{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+    line-height: 100px;
+}
+.content h2{
+    font-size: 80px;
+    color: #fff;
+}
+.content .model ,.readMore{
+    height: auto;
+    width: 200px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #daac81;
+    border-radius: 5px;
+    line-height: 80px;
+}
+.content .readMore{
+    height: 90px;
+    border: 2px solid #daac81;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.content .readMore:hover{
+    border: 2px solid #daac81;
+    background: transparent;
+    color: #fff;
+}
+.social{
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.social i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: transparent;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    border: 2px solid #daac81;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.social i:hover{
+    background: #daac81;
+    color: #fff;
+}
